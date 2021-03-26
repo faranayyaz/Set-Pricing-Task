@@ -1,0 +1,16 @@
+table {
+  font-family: "Gill Sans" !important;
+}
+
+/* .MuiIconButton-colorSecondary {
+  color: green !important;
+} */
+
+.MuiSvgIcon-root {
+  width: 0.7em !important;
+  height: 0.8em !important;
+}
+
+/* .MuiTableCell-root {
+  background-color: white !important;
+} */

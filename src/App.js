@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./utils/header";
+import Body from "./Components/body";
+import Footer from "./utils/footer";
+
+function createData(state1, name, state2, state3, state4) {
+  return { state1, name, state2, state3, state4 };
+}
+
+const records = [
+  createData(false, "FIORENTINA - AC MILAN", false, false, false),
+  createData(false, "FIORENTINA - AC MILAN", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+  createData(false, "FIORENTINA - UDINESE", false, false, false),
+];
 
 function App() {
+  const [rows, setRows] = React.useState(records);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Body rows={rows} setRows={setRows} />
+      <Footer rows={rows} />
     </div>
   );
 }
