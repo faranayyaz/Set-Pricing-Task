@@ -30,33 +30,6 @@ const StyledTableRow = withStyles((theme) => ({
   },
 }))(TableRow);
 
-// function createData(state1, name, state2, state3, state4) {
-//   return { state1, name, state2, state3, state4 };
-// }
-
-// const records = [
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-//   createData(false, "FIORENTINA - UDINESE", false, false, false),
-// ];
-
 const ScheduleTable = ({ rows, setRows }) => {
   const [headerRow, setHeaderRow] = React.useState([false, false, false]);
   const [background, setBackground] = React.useState({ row: -1, column: -1 });
